@@ -25,6 +25,7 @@ export {
     Profile,
     GetShipment,
     CompleteShipment,
+    StartShipment,
     //SVG
     Nav1,
     Nav2,

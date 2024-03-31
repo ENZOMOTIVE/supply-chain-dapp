@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const CompleteShipment = () => {
   return (
@@ -6,4 +6,4 @@ const CompleteShipment = () => {
   )
 }
 
-export default CompleteShipment
+export default CompleteShipment;
