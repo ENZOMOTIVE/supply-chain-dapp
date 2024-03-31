@@ -19,6 +19,12 @@ export default ({
       avatar: images.startShipment,
     },
     {
+      avatar: images.userProfile,
+    },
+    {
+      avatar: images.shipCount,
+    },
+    {
       avatar: images.send,
     },
   ];
