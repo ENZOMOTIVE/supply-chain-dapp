@@ -1,8 +1,9 @@
+
 export default ({setCreateShipmentModel, allShipmentsdata
 }) => {
   const converTime = (time) => {
     const newTime = new Date(time);
-  const dataTime = Intl.DateTimeFormat("en-US", {
+  const dataTime = new Intl.DateTimeFormat("en-US", {
     year: "numeric",
     month: "2-digit",
     day: "2-digit",
