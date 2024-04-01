@@ -15,6 +15,7 @@ export const TrackingContext = React.createContext();
 
 export const TrackingProvider = ({ children }) => {
   // STATE VARIABLE
+  //the entire logic for the application
   const DappName = "Product Tracking Dapp";
   const [currentUser, setCurrentUser] = useState("");
 
@@ -23,14 +24,14 @@ export const TrackingProvider = ({ children }) => {
     const { receiver, pickupTime, distance, price } = items;
 
     try {
-      const web3Modal = new Web3Modal();
+      const web3Modal = new Web3Modal(); //connect the contract with the wallet
       const connection = await web3Modal.connect();
-      const provider = new ethers.providers.Web3Provider(connection);
+      const provider = new ethers.providers.Web3Provider(connection); //connect the bridge
       const signer = provider.getSigner();
       const contract = fetchContract(signer);
       const createItem = await contract.createShipment(
         receiver,
-        new Date(pickupTime).getTime(),
+        new Date(pickupTime).getTime(), //converting the pickup time in timestamp
         distance,
         ethers.utils.parseUnits(price, 18),
         {

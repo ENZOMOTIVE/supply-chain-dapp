@@ -1,4 +1,4 @@
-import React , {useState,useEffect,useContext} from 'react';
+import React , { useState, useEffect, useContext} from "react";
 
 //Internal import
 import{
@@ -15,7 +15,7 @@ import { TrackingContext } from '@/Context/Tracking';
 
 const index = () => {
 const{
-  currentUser,
+  currentUser, // address of whoever will interact with the application
   createShipment,
   getAllShipment,
   completeShipment,
@@ -32,7 +32,7 @@ const [completeModal, setCompleteModal] = useState(false);
 const [getModel, setGetModel] = useState(false);
 
 //Data State Variable
-const [allShipmentsdata, setallShipmentsdata] = useState();
+const [allShipmentsdata, setallShipmentsdata] = useState(); // this will be in form of arrays so will store that one
 
 useEffect(() => {
   const getCampaignsData = getAllShipment();
