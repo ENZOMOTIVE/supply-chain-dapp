@@ -1,90 +1,40 @@
-# Supply Chain DApp
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-> Supply Chain DApp is a supply-chain dapp connected to research work around traceability and decentralized records.
+## Getting Started
 
-## The Story
-
-Supply Chain DApp starts with a simple goal: connect a user-facing product experience with protocol logic that can be inspected and evolved. Its shape tells the same story: the product interface and the protocol or smart-contract layer live close enough together that a maintainer can see the project as a whole before diving into individual folders.
-
-## Detailed Description
-
-Supply Chain DApp is a supply-chain dapp connected to research work around traceability and decentralized records. This README is meant to explain the project like a handoff note: what the idea is, why the repository exists, and how someone can start working with it without opening every file first.
-
-The repository is most useful when the frontend and contract layer are documented together. The UI explains the user journey, while the protocol files explain the rules, assets, or verification model behind that journey.
-
-At the top level, the most important entry points are `4.5.0`, `Components`, `Context`, `Images`, `contracts`, and `hardhat.config.js`. Together they show the current boundary of the project and make it easier to separate product code, support files, documentation, and experiments.
-
-The declared Node surfaces include the root package (scripts: `dev`, `build`, `start`, `lint`). Those package files are the best starting points for understanding how the app runs, builds, or validates itself.
-
-The visible stack currently points to `Next.js`, `React`, `Hardhat`, `Node.js`, `JavaScript`, `Solidity`, and `CSS`. Keep this list honest as the project changes so the README remains useful as a first technical map.
-
-## What It Includes
-
-- A user-facing surface for the product, demo, dashboard, or static experience.
-- Protocol or smart-contract files that anchor the Web3 side of the project.
-
-## How It Is Put Together
-
-| Path | Role |
-| --- | --- |
-| `.gitignore` | ignored local, dependency, and build files |
-| `4.5.0` | project file or folder |
-| `Components` | project file or folder |
-| `Context` | project file or folder |
-| `Images` | project file or folder |
-| `contracts` | smart-contract source |
-| `hardhat.config.js` | JavaScript source |
-| `ignition` | project file or folder |
-| `jsconfig.json` | project file or folder |
-| `next.config.mjs` | project file or folder |
-| `package-lock.json` | locked dependency versions |
-| `package.json` | Node package scripts and dependencies |
-
-## Local Development
+First, run the development server:
 
 ```bash
-git clone https://github.com/ENZOMOTIVE/supply-chain-dapp.git
-cd supply-chain-dapp
-```
-
-```bash
-npm install
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Command Surface
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-| Area | Commands |
-| --- | --- |
-| `package.json` | `dev`, `build`, `start`, `lint` |
-| Smart contracts | `npx hardhat compile`, `npx hardhat test` |
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Configuration
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-- Keep wallet private keys, RPC URLs, mnemonics, and contract secrets outside version control.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Quality Checks
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-- From the repository root, run `npm run lint`.
-- From the repository root, run `npm run build`.
-- Run the Hardhat test suite before deploying or changing contract behavior.
+## Learn More
 
-## Where To Take It Next
+To learn more about Next.js, take a look at the following resources:
 
-- Add screenshots or a short user flow so visitors can see the interface before running it.
-- Record supported networks, deployment addresses, and contract verification steps when they exist.
-- Keep setup commands current whenever dependencies, scripts, or deployment targets change.
-- Record important product decisions here so the repository keeps its story as the code evolves.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Project Metadata
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-| Field | Details |
-| --- | --- |
-| Repository | `ENZOMOTIVE/supply-chain-dapp` |
-| Categories | `Full Stack`, `Protocol` |
-| Primary stack | Next.js, React, Hardhat, Node.js, JavaScript, Solidity, CSS |
+## Deploy on Vercel
 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## License
-
-No license file is currently committed. Add one before distributing this project publicly.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
