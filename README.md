@@ -1,40 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Supply Chain DApp
+
+## Project Tags
+
+- `Full Stack`
+- `Protocol`
+
+## Overview
+
+Supply Chain DApp is a decentralized application project that combines a user-facing web app with smart-contract code.
+
+## Features
+
+- User-facing frontend or app interface
+- Backend service, API, websocket, bot, or server workflow
+- Smart contracts, deployment scripts, or protocol code
+
+## Tech Stack
+
+- Next.js
+- React
+- Hardhat
+- Node.js
+- JavaScript
+- Solidity
+- CSS
+
+## Project Structure
+
+- `.gitignore` - project file or directory
+- `4.5.0` - project file or directory
+- `Components` - reusable UI components
+- `Context` - project file or directory
+- `Images` - project file or directory
+- `contracts` - smart contract source files
+- `hardhat.config.js` - Hardhat configuration
+- `ignition` - project file or directory
+- `jsconfig.json` - project file or directory
+- `next.config.mjs` - project file or directory
+- `package-lock.json` - project file or directory
+- `package.json` - Node package metadata and scripts
+- `pages` - page routes
+- `postcss.config.js` - project file or directory
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Git
+- Node.js 18+
+- Wallet/RPC access for deployed contract workflows
+
+### Setup and Run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/ENZOMOTIVE/supply-chain-dapp.git
+cd supply-chain-dapp
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+npm install
+npm run dev
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Commands
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- `package.json`: `dev`, `build`, `start`, `lint`
+- `npx hardhat compile`: compile smart contracts.
+- `npx hardhat test`: run smart-contract tests when test files are present.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Store private keys, RPC URLs, wallet mnemonics, and API keys in a local `.env` file only.
+- Document required service ports, database URLs, and API credentials before deployment.
 
-## Learn More
+## Testing and Quality
 
-To learn more about Next.js, take a look at the following resources:
+- From the repository root, run `npm run lint`.
+- From the repository root, run `npm run build`.
+- Run `npx hardhat test` for contract-level checks when tests are present.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Documentation Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Keep this README aligned with the actual source layout and commands.
+- Add screenshots, API examples, contract addresses, or deployment links when they become stable.
+- Update the project tags when the scope changes.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Create a focused branch for the change.
+2. Update code and documentation together.
+3. Run the relevant checks before opening a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+No license file is currently committed. Add one before distributing this project publicly.
